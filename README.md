@@ -8,6 +8,7 @@ Puedes descargarlo desde [aquí](https://git-scm.com/).
 * [Conceptos basicos](#conceptos-basicos)
 * [Comandos](#comandos)
 * [Herramientas](#herramientas)
+* [¿Cómo resolver el commit behind?]()
 
 > # Primeros pasos
 
@@ -56,6 +57,9 @@ Puedes descargarlo desde [aquí](https://git-scm.com/).
 * ## Merge
     Un merge es el proceso en el que se fusionan dos ramas, es decir, se combinan los cambios que se hicieron en dos ramas.
 
+> [!TIP]
+> Cuando se vaya a hacer un merge, es recomendable asignar un reviewer o revisor. Esta es una persona encargada de revisar y aprobar tu código para garantizar que este cumpla con todos los estandares de calidad.
+
 * ## Conflictos de Merge
     Los conflictos de merge ocurren cuando el proceso de fusion mencionado no se puede llevar a cabo. Esto puede ocurrir porque Git no puede identificar cuales son los cambios que deben persistir y en ese caso, el desarrollador que este haciendo el merge deberá solucionarlo manualmente.
 ---
@@ -65,6 +69,7 @@ Puedes descargarlo desde [aquí](https://git-scm.com/).
     ```
     git clone [URL remota]
     ```
+    Este comando traerá todos los archivos del repositorio remoto indicado.
 
 * ## Visualizar el repositorio remoto
     ```
@@ -150,6 +155,16 @@ Puedes descargarlo desde [aquí](https://git-scm.com/).
 > [!WARNING]
 > No hacer nunca ```git push --force```!
 
+* ## Guardar los cambios de tu rama temporalmente
+  ```
+  git stash
+  ```
+  En caso de que tengas cambios que aún no estan en el staging area y necesites cambiarte de rama pero sin mover estos cambios o perderlos, puedes utilizar este comando para guardarlos temporalmente en el stash.
+
+  Una vez vuelvas a la rama de la cual guardaste los cambios temporalmente, puedes utilizar el siguiente comando para recuperar los cambios del stash:
+  ```
+  git stash pop
+  ```
 
 ---
 > # Herramientas
@@ -158,3 +173,4 @@ Puedes descargarlo desde [aquí](https://git-scm.com/).
 
 * ## Git Bash
 ---
+> # ¿Cómo resolver el commit behind?
