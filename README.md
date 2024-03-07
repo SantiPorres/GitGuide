@@ -76,6 +76,12 @@ Puedes descargarlo desde [aquí](https://git-scm.com/).
     git remote -v
     ```
     Este comando te muestra la URL del repositorio remoto.
+  
+* ## Cambiar dirección de repositorio remoto
+    ```
+    git remote set-url origin [nueva url]
+    ```
+    Este comando te permitirá cambiar la dirección URL remota.
 
 * ## Visualizar ramas del repositorio
     ```
@@ -166,11 +172,23 @@ Puedes descargarlo desde [aquí](https://git-scm.com/).
   git stash pop
   ```
 
+* ## Eliminar los cambios realizados
+  ```
+  git restore .
+  ```
+  Este comando elimina los cambios realizados en los ficheros que ya estaban en el repositorio.
+
+  Si deseas eliminar aquellos archivos que no estan siendo rastreados (untracked files), tendrás que utilizar el siguiente comando:
+  ```
+  git clean
+  ```
+
 ---
 > # Herramientas
 
 * ## GitLens
+  Esta es una extensión de código abierto para Visual Studio Code que facilita la información de quien fue la ultima persona que hizo commit sobre cada linea específica de código y en que momento. Es demasiado util y podría considerarse indispensable.
+  Puedes conocer más de la extensión [aquí](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens). 
 
 * ## Git Bash
----
-> # ¿Cómo resolver el commit behind?
+  Es una herramienta que se instala junto a Git y nos ofrece una terminal muy comoda para trabajar con la tecnología.
