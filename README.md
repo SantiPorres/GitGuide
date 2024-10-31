@@ -192,3 +192,6 @@ Puedes descargarlo desde [aquí](https://git-scm.com/).
 
 * ## Git Bash
   Es una herramienta que se instala junto a Git y nos ofrece una terminal muy comoda para trabajar con la tecnología.
+
+* ## GitKraken
+  GitKraken es un cliente GUI de Git multiplataforma que facilita el trabajo con repositorios Git mediante una interfaz visual. Proporciona a los desarrolladores un entorno intuitivo y fácil de usar para gestionar sus repositorios Git, simplificando operaciones de control de versiones como la creación de ramas, la fusión y el rebase.
